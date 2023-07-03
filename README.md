@@ -18,7 +18,10 @@ npm run dev
 and then by going to
 localhost:3000 in your browser. The AJAX calls
 (1) add an entry to an array of people, where each entry must have
-a name and an age; (2) retrieve the array of people, and (3) retrieve a specific
+a name and an age; 
+(2) retrieve the array of people, and 
+
+(3) retrieve a specific
 entry for the array of people. To add an entry, the front end sends a post request
 to the URI /api/v1/people where
 the body of the request is a json document containing the name (a string), and the
@@ -125,3 +128,6 @@ errors if you do not end JavaScript statements with a semicolon.
 
 When all the tests in test.js and puppeteer.js are completed and working, push your
 work to github, create the pull request, and submit your work.
+
+
+<img src="./Screenshot%20from%202023-07-03%2014-03-54.png" alt="mocha test">

@@ -2,6 +2,47 @@
 <html>
   <head>
     <title>Testing with Chai</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 0;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      form {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="number"] {
+        padding: 5px;
+        width: 200px;
+      }
+
+      button {
+        padding: 5px 10px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+      #result {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #f0f0f0;
+      }
+    </style>
   </head>
   <body>
     <h1>Testing with Chai</h1>
@@ -18,7 +59,7 @@
       <button type="submit" id="getPerson">Show Person</button>
     </form>
     <form>
-      <button type="submit" , id="listPeople">List People</button>
+      <button type="submit" id="listPeople">List People</button>
     </form>
     <div id="result"></div>
     <script src="/client.js"></script>

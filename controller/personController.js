@@ -5,10 +5,14 @@ const people = []; // Array to store the people
 const addPerson = (req, res) => {
   const { name, age } = req.body;
 
+  if (!name) {
+    return res.status(400).json({ error: "Please enter a name." });
+  }
+
   const newPerson = new Person(name, age);
   people.push(newPerson);
 
-  res.status(200).json({ message: "Person added successfully", people });
+  res.status(200).json({ message: "A person record was added", people });
 };
 
 module.exports = {
